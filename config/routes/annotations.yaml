@@ -1,0 +1,9 @@
+controllers:
+    resource: ../../src/CustomerAciliaSoftware/Category/Infrastructure/
+    type: annotation
+
+
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation

@@ -17,15 +17,19 @@ services:
         resource: '../src/'
         exclude:
             - '../src/DependencyInjection/'
-            - '../src/Entity/'
+            - '../src/Domain/'
             - '../src/Kernel.php'
             - '../src/Tests/'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
-    App\Controller\:
-        resource: '../src/Controller/'
+    App\CustomerAciliaSoftware\Category\Infrastructure\:
+        resource: '../src/CustomerAciliaSoftware/Category/Infrastructure/'
         tags: ['controller.service_arguments']
+
+    App\CustomerAciliaSoftware\Product\Infrastructure\:
+        resource: '../src/CustomerAciliaSoftware/Product/Infrastructure/'
+        tags: [ 'controller.service_arguments' ]
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
