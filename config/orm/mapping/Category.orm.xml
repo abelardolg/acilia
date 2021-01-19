@@ -12,8 +12,8 @@
 
         <id name="id" type="string" length="36"/>
 
-        <field name="name" length="100"/>
-        <field name="description" length="100"/>
+        <field name="name" length="20"/>
+        <field name="description" length="30"/>
         <field name="createdAt" type="datetime"/>
         <field name="updatedAt" type="datetime"/>
 

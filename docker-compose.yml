@@ -36,6 +36,7 @@ services:
       - docker-symfony-acilia-network
     depends_on:
       - docker-symfony-acilia-db
+#    command: ["./wait-for-it.sh", "docker-symfony-acilia-db:40100", "--", "python", "app.py"]
 
   docker-symfony-acilia-db:
     container_name: docker-symfony-acilia-db
