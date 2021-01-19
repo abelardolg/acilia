@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_BE = docker-symfony-be
+DOCKER_BE = docker-symfony-acilia-be
 UID = $(shell id -u)
 
 help: ## show this help message
